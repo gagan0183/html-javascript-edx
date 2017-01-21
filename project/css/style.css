@@ -48,7 +48,7 @@ main {
 }
 
 @font-face {
-    font-family: 'News Cycle';
+    font-family: 'News Cycle' !important;
     src: url('../fonts/news_cycle.ttf') format('truetype');
 }
 
@@ -68,7 +68,6 @@ header {
 article {
     margin: 5px 0px;
     padding: 5px 5px;
-    box-shadow: -1px -1px 6px #888888;
 }
 
 @media not print {
@@ -109,4 +108,12 @@ article {
      header h2 {
          display: none;
      }
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel .item > img {
+    display: inline-block;
 }
